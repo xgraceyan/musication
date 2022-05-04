@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import Home from "./components/Home";
+import Instrument from "./components/Instrument";
+import Navbar from "./components/navbar/Navbar";
+import Error from "./components/Error";
+
+import $ from "jquery";
+
+import { Scrollbar } from "smooth-scrollbar-react";
 
 function App() {
+  // change app height on window resize
+  window.addEventListener("resize", function() {
+    $("#app").css("height", window.innerHeight + "px");
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <Scrollbar>
+        <div className="App" style={{ height: window.innerHeight }} id="app">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route
+              path="/instrument/:instrumentName"
+              element={<Instrument />}
+            />
+            {/* error page if path doesn't exist */}
+            <Route path="*" element={<Error />} />
+          </Routes>
+        </div>
+      </Scrollbar>
+    </BrowserRouter>
   );
 }
 
