@@ -24,13 +24,13 @@ function App() {
       <Scrollbar>
         <div className="App" style={{ height: window.innerHeight }} id="app">
           <Routes>
-            <Route path="/" element={<Home />} />
             <Route
-              path="/instrument/:instrumentName"
+              path="/musication/instrument/:instrumentName"
               element={<Instrument />}
             />
-            <Route path="/about" element={<About />} />
-            <Route path="/quiz" element={<Quiz />} />
+            <Route path="/musication/about" element={<About />} />
+            <Route path="/musication/quiz" element={<Quiz />} />
+            <Route exact path="/musication/" element={<Home />} />
             {/* error page if path doesn't exist */}
             <Route path="*" element={<Error />} />
           </Routes>

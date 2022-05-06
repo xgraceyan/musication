@@ -253,7 +253,7 @@ iframe {
 /* youtube background video */
 .youtube-video {
   height: 45rem !important;
-  opacity: 30%;
+  opacity: 30% !important;
 }
 
 .content {

@@ -10,8 +10,8 @@ const Navbar = (props) => {
     <section className="nav-section">
       <nav className="navbar fixed-top navbar-expand-lg pb-3 pt-3">
         <div className="container-fluid">
-          <a className="navbar-brand ms-5" href="../">
-            <img src="../images/white_logo_small.png" alt="" />
+          <a className="navbar-brand ms-5" href="../musication/">
+            <img src="images/white_logo_small.png" alt="" />
           </a>
           <button
             className="navbar-toggler"
@@ -26,16 +26,21 @@ const Navbar = (props) => {
               <i className="fas fa-bars"></i>
             </span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
+          <div
+            className="collapse navbar-collapse"
+            id="navbarNav"
+            data-target=".navbar-collapse"
+            data-toggle="collapse"
+          >
             <ul className="navbar-nav ms-auto me-5">
               <li className="nav-item">
-                <a href="../" className="nav-link">
+                <a href="../musication/" className="nav-link">
                   Home
                 </a>
               </li>
 
               <li className="nav-item">
-                <a href="../about" className="nav-link">
+                <a href="../musication/about" className="nav-link">
                   About
                 </a>
               </li>
@@ -43,7 +48,7 @@ const Navbar = (props) => {
               <InstrumentNavLink props={props} />
 
               <li className="nav-item">
-                <a href="../quiz" className="nav-link">
+                <a href="../musication/quiz" className="nav-link">
                   Quiz
                 </a>
               </li>

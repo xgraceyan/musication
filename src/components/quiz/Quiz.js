@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import $ from "jquery";
-import { Modal } from "bootstrap";
 
 import QuizModal from "./QuizModal";
 
@@ -19,8 +18,9 @@ class Quiz extends Component {
 
   // toggles modal for quiz result
   toggleModal = () => {
-    var quizModal = new Modal(document.getElementById("quizModal"));
-    quizModal.toggle();
+    $("#quizModal")
+      .addClass("show")
+      .css("display", "block");
     $("#quiz-section").addClass("frozen");
     $(".scroll-content").css("transform", "translate3d(0px, 0px, 0px");
   };

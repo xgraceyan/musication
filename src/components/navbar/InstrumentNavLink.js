@@ -20,7 +20,7 @@ const InstrumentNavLink = ({ props }) => {
     <li className="nav-item dropdown">
       <a
         className="nav-link dropdown-toggle"
-        href="/home#instruments"
+        href="../musication#instruments"
         id="navbarDropdown"
         role="button"
         data-bs-toggle="dropdown"
@@ -53,7 +53,7 @@ const InstrumentNavLink = ({ props }) => {
                   <li key={woodwindInstrument.id}>
                     <a
                       className="dropdown-item"
-                      href={"../instrument/" + woodwindInstrument.id}
+                      href={"../musication/instrument/" + woodwindInstrument.id}
                     >
                       {woodwindInstrument.name}
                     </a>
@@ -83,7 +83,7 @@ const InstrumentNavLink = ({ props }) => {
                   <li key={brassInstrument.id}>
                     <a
                       className="dropdown-item"
-                      href={"../instrument/" + brassInstrument.id}
+                      href={"../musication/instrument/" + brassInstrument.id}
                     >
                       {brassInstrument.name}
                     </a>
@@ -113,7 +113,7 @@ const InstrumentNavLink = ({ props }) => {
                   <li key={stringInstrument.id}>
                     <a
                       className="dropdown-item"
-                      href={"../instrument/" + stringInstrument.id}
+                      href={"../musication/instrument/" + stringInstrument.id}
                     >
                       {stringInstrument.name}
                     </a>
@@ -127,7 +127,7 @@ const InstrumentNavLink = ({ props }) => {
           <hr className="dropdown-divider" />
         </li>
         <li>
-          <a className="dropdown-item" href="../#instruments">
+          <a className="dropdown-item" href="../musication#instruments">
             See all
           </a>
         </li>
