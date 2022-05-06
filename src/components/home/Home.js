@@ -6,8 +6,8 @@ import "owl.carousel/dist/assets/owl.carousel.min.css";
 import "owl.carousel/dist/assets/owl.theme.default.min.css";
 import "youtube-background";
 
-import InstrumentCard from "./instruments/InstrumentCard";
-import VideoHeader from "./video-header/VideoHeader";
+import InstrumentCard from "../instruments/InstrumentCard";
+import VideoHeader from "../video-header/VideoHeader";
 
 var jsonQuery = require("json-query");
 
@@ -24,7 +24,7 @@ class Home extends Component {
             <VideoHeader videos={this.props.videos} />
           </section>
 
-          <section className="instruments-section" id="instruments">
+          <section id="instruments">
             <div className="container section-container">
               <h1 className="section-header text-center">Instruments</h1>
               {/* !====== woodwinds ======== */}
@@ -63,6 +63,19 @@ class Home extends Component {
                   }
                 />
               </div>
+            </div>
+          </section>
+          <section className="bg-image-alt-2" id="home-quiz">
+            <div className="container section-container title-container">
+              <h1 className="section-header text-center">
+                Test Your Knowledge
+              </h1>
+              <hr className="yellow-line mx-auto" />
+              <p className="text-center fs-2">
+                <a href="../quiz" className="link">
+                  Take the Quiz →
+                </a>
+              </p>
             </div>
           </section>
         </div>

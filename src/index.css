@@ -4,6 +4,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  background-color: #282e36 !important;
 }
 
 html {
@@ -34,15 +35,42 @@ img {
   user-drag: none;
 }
 
+iframe {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
 /* === general styles === */
 
-/* background color */
+/* backgrounds */
 .bg-light-gray {
   background-color: #282e36;
 }
 
 .bg-dark-gray {
   background-color: #20252b;
+}
+
+.bg-image {
+  background: linear-gradient(to right, #20252bbf, #20252bbf),
+    url("https://images.unsplash.com/photo-1613142659446-bf37da865799?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80") !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-image-alt {
+  background: linear-gradient(to right, #20252bbf, #20252bbf),
+    url("https://images.pexels.com/photos/210764/pexels-photo-210764.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-image-alt-2 {
+  background: linear-gradient(to right, #20252bbf, #20252bbf),
+    url("https://images.pexels.com/photos/934067/pexels-photo-934067.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") !important;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* containers */
@@ -131,6 +159,28 @@ img {
   opacity: 100%;
   margin-top: 0 !important;
   width: 10rem;
+}
+
+/* buttons */
+.btn {
+  border: none !important;
+}
+
+.btn:focus {
+  box-shadow: none !important;
+}
+
+.btn-primary {
+  background-color: #d9b00d !important;
+}
+
+.btn-submit {
+  margin-top: 1rem;
+}
+
+.btn-submit:hover {
+  background-color: rgba(198, 161, 15, 0.92) !important;
+  transition: ease-in-out 0.2s;
 }
 
 /* spacer */
@@ -234,4 +284,28 @@ img {
 
 .scrollbar-track-x {
   display: none !important;
+}
+
+/* modal */
+.modal-backdrop {
+  z-index: -1 !important;
+}
+
+.frozen {
+  position: fixed;
+  pointer-events: none;
+  height: 100vh;
+  width: 100%;
+  overflow-y: hidden !important;
+  opacity: 10%;
+}
+
+.modal-content {
+  border-radius: 1rem !important;
+}
+
+/* quiz form */
+.title-container#quiz-form-container {
+  padding-top: 0 !important;
+  padding-bottom: 5rem;
 }

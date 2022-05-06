@@ -1,10 +1,12 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import Home from "./components/Home";
-import Instrument from "./components/Instrument";
+import Home from "./components/home/Home";
+import Instrument from "./components/instruments/Instrument";
+import About from "./components/about/About";
+import Quiz from "./components/quiz/Quiz";
 import Navbar from "./components/navbar/Navbar";
-import Error from "./components/Error";
+import Error from "./components/error/Error";
 
 import $ from "jquery";
 
@@ -27,6 +29,8 @@ function App() {
               path="/instrument/:instrumentName"
               element={<Instrument />}
             />
+            <Route path="/about" element={<About />} />
+            <Route path="/quiz" element={<Quiz />} />
             {/* error page if path doesn't exist */}
             <Route path="*" element={<Error />} />
           </Routes>

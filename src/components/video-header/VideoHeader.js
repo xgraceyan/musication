@@ -32,7 +32,7 @@ const VideoHeader = ({ videos }) => {
           />
           <p className="large-text text-white">
             Discover the various instruments that make music we hear all around
-            us in our everyday lives.
+            us in our everyday lives, with an emphasis on classical music.
           </p>
           <div className="spacer"></div>
           <p className="text-white">

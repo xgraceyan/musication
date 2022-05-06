@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 
 import { connect } from "react-redux";
 import InstrumentNavLink from "./InstrumentNavLink";
@@ -36,44 +35,17 @@ const Navbar = (props) => {
               </li>
 
               <li className="nav-item">
-                <a href="../#instruments" className="nav-link">
+                <a href="../about" className="nav-link">
                   About
                 </a>
               </li>
 
               <InstrumentNavLink props={props} />
 
-              <li className="nav-item dropdown">
-                <NavLink
-                  className="nav-link dropdown-toggle"
-                  to="/instruments"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Ensembles
-                </NavLink>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a className="dropdown-item" href="/#">
-                      Woodwinds
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="/#">
-                      Brass
-                    </a>
-                  </li>
-                  <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="/#">
-                      See all
-                    </a>
-                  </li>
-                </ul>
+              <li className="nav-item">
+                <a href="../quiz" className="nav-link">
+                  Quiz
+                </a>
               </li>
             </ul>
           </div>
@@ -86,7 +58,6 @@ const Navbar = (props) => {
 const mapStateToProps = (state) => {
   return {
     instruments: state.instrument.instruments,
-    videos: state.video.videos,
   };
 };
 
