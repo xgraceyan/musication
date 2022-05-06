@@ -21,10 +21,10 @@ const QuizModal = ({ score }) => {
             You scored a <strong>{score}/6</strong> on this quiz!
           </div>
           <div className="modal-footer">
-            <a className="btn btn-secondary" href="../musication">
+            <a className="btn btn-secondary" href="../">
               Back to home
             </a>
-            <a className="btn btn-primary" href="../musicationquiz">
+            <a className="btn btn-primary" href="../quiz">
               Try again
             </a>
           </div>

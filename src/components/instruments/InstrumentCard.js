@@ -41,7 +41,7 @@ const InstrumentCard = ({ instruments }) => {
             instruments.map((instrument) => {
               return (
                 <a
-                  href={"../musication/instrument/" + instrument.id}
+                  href={"../instrument/" + instrument.id}
                   key={instrument.id}
                   className="card-link"
                 >

@@ -34,13 +34,13 @@ const Navbar = (props) => {
           >
             <ul className="navbar-nav ms-auto me-5">
               <li className="nav-item">
-                <a href="../musication/" className="nav-link">
+                <a href="../" className="nav-link">
                   Home
                 </a>
               </li>
 
               <li className="nav-item">
-                <a href="../musication/about" className="nav-link">
+                <a href="../about" className="nav-link">
                   About
                 </a>
               </li>
@@ -48,7 +48,7 @@ const Navbar = (props) => {
               <InstrumentNavLink props={props} />
 
               <li className="nav-item">
-                <a href="../musication/quiz" className="nav-link">
+                <a href="../quiz" className="nav-link">
                   Quiz
                 </a>
               </li>

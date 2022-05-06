@@ -72,7 +72,7 @@ class Home extends Component {
               </h1>
               <hr className="yellow-line mx-auto" />
               <p className="text-center fs-2">
-                <a href="../musication/quiz" className="link">
+                <a href="../quiz" className="link">
                   Take the Quiz →
                 </a>
               </p>
