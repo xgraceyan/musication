@@ -10,8 +10,8 @@ const Navbar = (props) => {
     <section className="nav-section">
       <nav className="navbar fixed-top navbar-expand-lg pb-3 pt-3">
         <div className="container-fluid">
-          <a className="navbar-brand ms-5" href="../musication/">
-            <img src="images/white_logo_small.png" alt="" />
+          <a className="navbar-brand ms-5" href="../">
+            <img src="../images/white_logo_small.png" alt="" />
           </a>
           <button
             className="navbar-toggler"
