@@ -25,12 +25,12 @@ function App() {
         <div className="App" style={{ height: window.innerHeight }} id="app">
           <Routes>
             <Route
-              path="/musication/instrument/:instrumentName"
+              path="/instrument/:instrumentName"
               element={<Instrument />}
             />
-            <Route path="/musication/about" element={<About />} />
-            <Route path="/musication/quiz" element={<Quiz />} />
-            <Route exact path="/musication/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/quiz" element={<Quiz />} />
+            <Route exact path="/" element={<Home />} />
             {/* error page if path doesn't exist */}
             <Route path="*" element={<Error />} />
           </Routes>
