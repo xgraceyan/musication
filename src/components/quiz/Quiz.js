@@ -44,7 +44,7 @@ class Quiz extends Component {
     e.preventDefault();
     var correctCount = 0;
 
-    for (var i = 1; i <= Object.keys(this.state).length; i++) {
+    for (var i = 1; i <= Object.keys(this.state).length - 1; i++) {
       // count how many questions are correct
       const questionNum = "q" + i;
       if (this.state[questionNum] === this.correctAnswers[i - 1]) {
@@ -163,7 +163,7 @@ class Quiz extends Component {
                 <div className="mb-3" id="q6-select">
                   <label for="q6" className="form-label">
                     6. What percussion instrument is playing at 22:20? (Quiz
-                    Video)
+                    Video) *bonus question!
                   </label>
                   <select
                     className="form-select"
