@@ -27,7 +27,7 @@ const VideoHeader = ({ videos }) => {
         <div className="container section-container title-container mx-auto text-center content">
           <img
             src="images/musication_logo_white.png"
-            alt=""
+            alt="Musication logo"
             className="img-fluid img-center"
           />
           <p className="large-text text-white">
