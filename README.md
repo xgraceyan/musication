@@ -1,5 +1,5 @@
 # Musication
-[View deployed website](https://www.graceyan-musication.netlify.app/)
+[View deployed website](https://graceyan-musication.netlify.app/)
 
 ![musication home page](https://i.imgur.com/O9aFSxt.png)
 
