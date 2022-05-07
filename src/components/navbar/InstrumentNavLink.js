@@ -20,7 +20,7 @@ const InstrumentNavLink = ({ props }) => {
     <li className="nav-item dropdown">
       <a
         className="nav-link dropdown-toggle"
-        href="../musication#instruments"
+        href="../#instruments"
         id="navbarDropdown"
         role="button"
         data-bs-toggle="dropdown"

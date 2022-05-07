@@ -30,10 +30,10 @@ function Instrument(props) {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a href="../musication">Home</a>
+                      <a href="../">Home</a>
                     </li>
                     <li className="breadcrumb-item">
-                      <a href="../musication#instruments">Instruments</a>
+                      <a href="../#instruments">Instruments</a>
                     </li>
                   </ol>
                 </nav>

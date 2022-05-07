@@ -22,7 +22,7 @@ const VideoHeader = ({ videos }) => {
           data-vbg={video.url}
           data-vbg-fit-box={true}
           data-vbg-mute-button={true}
-          data-vbg-mobile={true}
+          data-ytbg-mobile={true}
         ></div>
         <div className="container section-container title-container mx-auto text-center content">
           <img
