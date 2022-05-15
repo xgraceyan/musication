@@ -2,7 +2,6 @@ import React from "react";
 
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.min.css";
-import "owl.carousel/dist/assets/owl.theme.default.min.css";
 
 const InstrumentCard = ({ instruments }) => {
   if (instruments) {
@@ -15,6 +14,8 @@ const InstrumentCard = ({ instruments }) => {
           dots={true}
           merge={true}
           mergeFit={false}
+          autoplay={true}
+          rewind={true}
           responsive={{
             0: {
               items: 2,

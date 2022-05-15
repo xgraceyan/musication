@@ -42,12 +42,16 @@ a.card-link {
     width: 8rem;
     height: 12rem;
   }
+  .card-title {
+    font-size: 1rem;
+  }
 }
 
 .card-1 .card-title {
   text-align: center;
   font-family: "DM Serif Display", serif;
   color: white;
+  margin-top: 0.5rem;
 }
 
 /* instrument image carousel */

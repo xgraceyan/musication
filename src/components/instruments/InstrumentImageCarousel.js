@@ -35,7 +35,7 @@ const InstrumentImageCarousel = ({ images }) => {
                 <img
                   src={image}
                   className="d-block w-100"
-                  alt="Instrument image"
+                  alt="Instrument"
                   data-toggle="tooltip"
                   data-bs-html="true"
                   data-delay='{"show":"5000", "hide":"3000"}'

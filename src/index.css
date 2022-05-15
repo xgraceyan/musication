@@ -226,7 +226,7 @@ iframe {
 /* breadcrumb */
 .breadcrumb a {
   text-decoration: none;
-  color: #6c757d;
+  color: rgb(154, 154, 154);
 }
 
 .breadcrumb a:hover {

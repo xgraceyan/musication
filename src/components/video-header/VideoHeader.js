@@ -15,6 +15,7 @@ const VideoHeader = ({ videos }) => {
   const video = videos[selectVideo()];
 
   if (video !== undefined) {
+    // console outputs "Cross-Origin Read Blocking" and "Unrecognized feature: mute" errors-- these seem to be Google errors
     return (
       <div className="video-header">
         <div
@@ -23,6 +24,7 @@ const VideoHeader = ({ videos }) => {
           data-vbg-fit-box={true}
           data-vbg-mute-button={true}
           data-ytbg-mobile={true}
+          data-vbg-load-background={false}
         ></div>
         <div className="container section-container title-container mx-auto text-center content">
           <img
@@ -38,7 +40,15 @@ const VideoHeader = ({ videos }) => {
           <p className="text-white">
             {video.piece} - {video.composer} <br />
             {video.performer} <br />
-            {video.url} <br /> <br />
+            <a
+              href={video.url}
+              className="link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Watch on YouTube
+            </a>{" "}
+            <br /> <br />
           </p>
         </div>
       </div>
