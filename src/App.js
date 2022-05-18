@@ -1,4 +1,5 @@
-import React from "react";
+import React, { Component } from "react";
+
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Home from "./components/home/Home";
@@ -8,36 +9,49 @@ import Quiz from "./components/quiz/Quiz";
 import Navbar from "./components/navbar/Navbar";
 import Error from "./components/error/Error";
 
-import $ from "jquery";
+import rolly from "rolly.js";
 
-import { Scrollbar } from "smooth-scrollbar-react";
+class App extends Component {
+  // initialize smooth scrolling after app is rendered
+  componentDidMount() {
+    const smoothScroll = rolly({
+      view: document.querySelector(".App"),
+      native: true,
+    });
+    smoothScroll.init();
 
-function App() {
-  // change app height on window resize
-  window.addEventListener("resize", function() {
-    $("#app").css("height", window.innerHeight + "px");
-  });
+    // if there is hash in url, scroll to element w/ that id
+    if (window.location.hash) {
+      var hash = window.location.hash.substring(1); // remove "#" from hash string
+      smoothScroll.scrollTo(document.getElementById(hash), {
+        position: "start",
+        offset: 400,
+      });
+    }
+  }
 
-  return (
-    <BrowserRouter>
-      <Navbar />
-      <Scrollbar>
-        <div className="App" style={{ height: window.innerHeight }} id="app">
-          <Routes>
-            <Route
-              path="/instrument/:instrumentName"
-              element={<Instrument />}
-            />
-            <Route path="/about" element={<About />} />
-            <Route path="/quiz" element={<Quiz />} />
-            <Route exact path="/" element={<Home />} />
-            {/* error page if path doesn't exist */}
-            <Route path="*" element={<Error />} />
-          </Routes>
+  render() {
+    return (
+      <BrowserRouter>
+        <Navbar />
+        <div className="App" id="app">
+          <section data-scene id="root-section">
+            <Routes>
+              <Route
+                path="/instrument/:instrumentName"
+                element={<Instrument />}
+              />
+              <Route path="/about" element={<About />} />
+              <Route path="/quiz" element={<Quiz />} />
+              <Route exact path="/" element={<Home />} />
+              {/* error page if path doesn't exist */}
+              <Route path="*" element={<Error />} />
+            </Routes>
+          </section>
         </div>
-      </Scrollbar>
-    </BrowserRouter>
-  );
+      </BrowserRouter>
+    );
+  }
 }
 
 export default App;

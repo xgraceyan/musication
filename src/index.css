@@ -256,6 +256,18 @@ iframe {
   opacity: 0.3 !important;
 }
 
+@media only screen and (max-width: 475px) {
+  .youtube-video {
+    height: 50rem !important;
+  }
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 992px) {
+  .youtube-video {
+    height: 50rem !important;
+  }
+}
+
 .content {
   position: relative;
 }
@@ -276,16 +288,6 @@ iframe {
   transform: scale(2);
 }
 
-/* scrollbar */
-.scroll-content {
-  width: 100vw;
-  height: 100%;
-}
-
-.scrollbar-track-x {
-  display: none !important;
-}
-
 /* modal */
 .modal-backdrop {
   z-index: -1 !important;
@@ -296,7 +298,7 @@ iframe {
   pointer-events: none;
   height: 100vh;
   width: 100%;
-  overflow-y: hidden !important;
+  overflow: hidden !important;
   opacity: 0.1;
 }
 

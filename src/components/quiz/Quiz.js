@@ -22,7 +22,11 @@ class Quiz extends Component {
       .addClass("show")
       .css("display", "block");
     $("#quiz-section").addClass("frozen");
-    $(".scroll-content").css("transform", "translate3d(0px, 0px, 0px");
+
+    // removes scroll element & replaces it with child section
+    $("#root-section").replaceWith(function() {
+      return $("#quiz-page", this);
+    });
   };
 
   // update state every time an answer is changed
@@ -63,10 +67,20 @@ class Quiz extends Component {
         <div id="quiz-section">
           <section className="bg-image-alt" id="quiz-title-section">
             <div className="container section-container title-container">
-              <h1 className="section-header text-center">Quiz!</h1>
+              <h1
+                className="section-header text-center"
+                data-aos="fade-down"
+                data-aos-delay="100"
+              >
+                Quiz!
+              </h1>
             </div>
           </section>
-          <section id="quiz-content-section">
+          <section
+            id="quiz-content-section"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
             <div className="container section-container" id="quiz-video">
               <p className="text-white text-center">
                 <strong>Quiz Video</strong> <br />
@@ -81,7 +95,12 @@ class Quiz extends Component {
                 height="500px"
               ></iframe>
             </div>
-            <div className="container title-container" id="quiz-form-container">
+            <div
+              className="container title-container"
+              id="quiz-form-container"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <h1 className="section-header text-center">Questions</h1>
               <form id="quiz-form" className="text-white">
                 <div className="mb-3" id="q1-select">

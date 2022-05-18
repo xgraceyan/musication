@@ -21,10 +21,18 @@ function Instrument(props) {
         <section id="instrument-intro-section">
           <div className="container section-container">
             <div className="row intro-row">
-              <div className="col-lg-3 col-md-4 col-5 instrument-cover-img">
+              <div
+                className="col-lg-3 col-md-4 col-5 instrument-cover-img"
+                data-aos="fade-down"
+                data-aos-delay="100"
+              >
                 <img src={instrument.coverImage} alt="" />
               </div>
-              <div className="col-lg-9 col-md-8 col-7 row-text-col">
+              <div
+                className="col-lg-9 col-md-8 col-7 row-text-col"
+                data-aos="fade-down"
+                data-aos-delay="400"
+              >
                 <div className="spacer-small"></div>
 
                 <nav aria-label="breadcrumb">
@@ -45,7 +53,11 @@ function Instrument(props) {
           </div>
         </section>
 
-        <section id="instrument-about-section">
+        <section
+          id="instrument-about-section"
+          data-aos="fade-up"
+          data-aos-delay="500"
+        >
           <div className="container page-section-container">
             <h1 className="section-header mb-0">About</h1>
             <hr className="yellow-line" />
@@ -72,7 +84,11 @@ function Instrument(props) {
         </section>
 
         <section id="instrument-videos-section" className="bg-dark-gray">
-          <div className="container page-section-container">
+          <div
+            className="container page-section-container"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <h1 className="section-header text-center">
               Pieces & Performances
             </h1>

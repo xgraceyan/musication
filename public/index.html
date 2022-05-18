@@ -29,6 +29,9 @@
       href="../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css"
     />
 
+    <!-- import animate on scroll css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- import popper.js -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
@@ -70,12 +73,20 @@
       referrerpolicy="no-referrer"
     ></script>
 
+    <!-- import animate on scroll js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- <script src="https://unpkg.com/rolly.js@0.4.0/dist/rolly.min.js"></script> -->
+
     <!-- add triggers -->
     <script>
       $(document).ready(function() {
         $(".owl-carousel").owlCarousel(); // owl carousel
         $('[data-toggle="tooltip"]').tooltip(); // tooltips
         $("[data-vbg]").youtube_background(); // youtube background
+        AOS.init({
+          duration: 1000,
+        });
       });
     </script>
   </body>

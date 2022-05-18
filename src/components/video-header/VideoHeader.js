@@ -23,7 +23,7 @@ const VideoHeader = ({ videos }) => {
           data-vbg={video.url}
           data-vbg-fit-box={true}
           data-vbg-mute-button={true}
-          data-ytbg-mobile={true}
+          data-vbg-mobile={true}
           data-vbg-load-background={false}
         ></div>
         <div className="container section-container title-container mx-auto text-center content">
@@ -31,13 +31,19 @@ const VideoHeader = ({ videos }) => {
             src="images/musication_logo_white.png"
             alt="Musication logo"
             className="img-fluid img-center"
+            data-aos="fade-up"
+            data-aos-delay="1500"
           />
-          <p className="large-text text-white">
+          <p
+            className="large-text text-white"
+            data-aos="fade-up"
+            data-aos-delay="1800"
+          >
             Discover the various instruments that make music we hear all around
             us in our everyday lives, with an emphasis on classical music.
           </p>
           <div className="spacer"></div>
-          <p className="text-white">
+          <p className="text-white" data-aos="fade-up" data-aos-delay="2000">
             {video.piece} - {video.composer} <br />
             {video.performer} <br />
             <a

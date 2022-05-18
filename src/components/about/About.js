@@ -5,10 +5,16 @@ function About() {
     <div className="bg-light-gray" id="about-page">
       <section id="about-title-section" className="bg-image">
         <div className="container section-container title-container">
-          <h1 className="section-header text-center">About</h1>
+          <h1
+            className="section-header text-center"
+            data-aos="fade-down"
+            data-aos-delay="100"
+          >
+            About
+          </h1>
         </div>
       </section>
-      <section id="about-info-section">
+      <section id="about-info-section" data-aos="fade-up" data-aos-delay="400">
         <div className="container section-container">
           <p className="text-white" id="about-text">
             Music is an integral part in many peoples' lives. Most of us hear it

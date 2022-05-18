@@ -26,9 +26,20 @@ class Home extends Component {
 
           <section id="instruments">
             <div className="container section-container">
-              <h1 className="section-header text-center">Instruments</h1>
+              <h1
+                className="section-header text-center"
+                data-aos="fade-down"
+                data-aos-delay="100"
+              >
+                Instruments
+              </h1>
               {/* !====== woodwinds ======== */}
-              <div className="card-section woodwinds-section">
+              <div
+                className="card-section"
+                id="woodwinds-section"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
                 <h3 className="header-2">Woodwinds</h3>
                 <div className="small-spacer"></div>
                 <InstrumentCard
@@ -40,7 +51,12 @@ class Home extends Component {
                 />
               </div>
               {/* !====== brass ======== */}
-              <div className="card-section brass-section">
+              <div
+                className="card-section"
+                id="brass-section"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
                 <h3 className="header-2">Brass</h3>
                 <div className="small-spacer"></div>
                 <InstrumentCard
@@ -52,7 +68,12 @@ class Home extends Component {
                 />
               </div>
               {/* !====== strings ======== */}
-              <div className="card-section brass-section">
+              <div
+                className="card-section"
+                id="strings-section"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
                 <h3 className="header-2">Strings</h3>
                 <div className="small-spacer"></div>
                 <InstrumentCard
@@ -65,8 +86,17 @@ class Home extends Component {
               </div>
             </div>
           </section>
-          <section className="bg-image-alt-2" id="home-quiz">
-            <div className="container section-container title-container">
+          <section
+            className="bg-image-alt-2"
+            id="home-quiz"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div
+              className="container section-container title-container"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <h1 className="section-header text-center">
                 Test Your Knowledge
               </h1>
