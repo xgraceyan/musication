@@ -41,14 +41,19 @@ class Quiz extends Component {
 
   // update quiz score to state
   handleSubmitUpdate = (correctCount) => {
-    this.setState({
-      correctAmt: correctCount,
-    });
+    this.setState(
+      {
+        correctAmt: correctCount,
+      },
+      () => {
+        if (this.state.correctAmt != -1) {
+          this.toggleModal();
+        }
+      }
+    );
   };
 
-  // quiz submission handler
-  handleSubmit = (e) => {
-    e.preventDefault();
+  processSubmission = () => {
     var correctCount = 0;
 
     for (var i = 1; i <= Object.keys(this.state).length - 1; i++) {
@@ -61,7 +66,13 @@ class Quiz extends Component {
 
     // send score to state & show modal
     this.handleSubmitUpdate(correctCount);
-    this.toggleModal();
+    // this.toggleModal();
+  };
+
+  // quiz submission handler
+  handleFormSubmit = (e) => {
+    e.preventDefault();
+    this.processSubmission();
   };
 
   render() {
@@ -202,7 +213,7 @@ class Quiz extends Component {
                   <button
                     type="submit"
                     className="btn btn-primary btn-submit"
-                    onClick={this.handleSubmit}
+                    onClick={this.handleFormSubmit}
                   >
                     Submit
                   </button>
