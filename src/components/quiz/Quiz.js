@@ -41,6 +41,7 @@ class Quiz extends Component {
     this.setState({
       correctAmt: correctCount,
     });
+    this.toggleModal();
   };
 
   // quiz submission handler
@@ -58,7 +59,6 @@ class Quiz extends Component {
 
     // send score to state & show modal
     this.handleSubmitUpdate(correctCount);
-    this.toggleModal();
   };
 
   render() {
