@@ -18,15 +18,18 @@ class Quiz extends Component {
 
   // toggles modal for quiz result
   toggleModal = () => {
-    $("#quizModal")
-      .addClass("show")
-      .css("display", "block");
-    $("#quiz-section").addClass("frozen");
+    if (this.state.correctAmt != -1) {
+      // removes scroll element & replaces it with child section
+      $("#root-section").replaceWith(function() {
+        return $("#quiz-page", this);
+      });
 
-    // removes scroll element & replaces it with child section
-    $("#root-section").replaceWith(function() {
-      return $("#quiz-page", this);
-    });
+      $("#quizModal")
+        .addClass("show")
+        .css("display", "block");
+
+      $("#quiz-section").addClass("frozen");
+    }
   };
 
   // update state every time an answer is changed
@@ -41,9 +44,6 @@ class Quiz extends Component {
     this.setState({
       correctAmt: correctCount,
     });
-    if (this.state.correctAmt == correctCount) {
-      this.toggleModal();
-    }
   };
 
   // quiz submission handler
@@ -61,6 +61,7 @@ class Quiz extends Component {
 
     // send score to state & show modal
     this.handleSubmitUpdate(correctCount);
+    this.toggleModal();
   };
 
   render() {
