@@ -68,6 +68,7 @@ a.card-link {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
   margin: 1rem 0 2.5rem 0;
+  text-shadow: 0.1rem 0.2rem 0.2rem black, 0 0.2rem 0.2rem black;
 }
 
 /* instrument video carousel */

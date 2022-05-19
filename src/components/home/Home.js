@@ -87,7 +87,7 @@ class Home extends Component {
             </div>
           </section>
           <section
-            className="bg-image-alt-2"
+            className="bg-image bg-image-home"
             id="home-quiz"
             data-aos="fade-up"
             data-aos-delay="100"

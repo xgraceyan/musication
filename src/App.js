@@ -6,6 +6,8 @@ import Home from "./components/home/Home";
 import Instrument from "./components/instruments/Instrument";
 import About from "./components/about/About";
 import Quiz from "./components/quiz/Quiz";
+import Contact from "./components/contact/Contact";
+
 import Navbar from "./components/navbar/Navbar";
 import Error from "./components/error/Error";
 
@@ -17,6 +19,7 @@ class App extends Component {
     const smoothScroll = rolly({
       view: document.querySelector(".App"),
       native: true,
+      autoUpdate: true,
     });
     smoothScroll.init();
 
@@ -43,6 +46,7 @@ class App extends Component {
               />
               <Route path="/about" element={<About />} />
               <Route path="/quiz" element={<Quiz />} />
+              <Route path="/contact" element={<Contact />} />
               <Route exact path="/" element={<Home />} />
               {/* error page if path doesn't exist */}
               <Route path="*" element={<Error />} />

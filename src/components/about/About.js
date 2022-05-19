@@ -3,7 +3,7 @@ import React from "react";
 function About() {
   return (
     <div className="bg-light-gray" id="about-page">
-      <section id="about-title-section" className="bg-image">
+      <section id="about-title-section" className="bg-image bg-image-about">
         <div className="container section-container title-container">
           <h1
             className="section-header text-center"
@@ -37,7 +37,12 @@ function About() {
             and pexels.com
             <br />- Frameworks & packages like Bootstrap were used and are
             listed in the package.json of the{" "}
-            <a href="https://github.com/xgraceyan/musication" className="link">
+            <a
+              href="https://github.com/xgraceyan/musication"
+              className="link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               GitHub Repository
             </a>
             .

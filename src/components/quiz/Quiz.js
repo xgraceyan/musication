@@ -18,16 +18,22 @@ class Quiz extends Component {
 
   // toggles modal for quiz result
   toggleModal = () => {
-    if (this.state.correctAmt != -1) {
+    // check if state has been updated
+    if (this.state.correctAmt !== -1) {
       // removes scroll element & replaces it with child section
       $("#root-section").replaceWith(function() {
         return $("#quiz-page", this);
       });
 
+      // disable scrolling
+      $(".rolly-scroll-view").remove();
+
+      // shows modal
       $("#quizModal")
         .addClass("show")
         .css("display", "block");
 
+      // freezes screen
       $("#quiz-section").addClass("frozen");
     }
   };
@@ -46,7 +52,8 @@ class Quiz extends Component {
         correctAmt: correctCount,
       },
       () => {
-        if (this.state.correctAmt != -1) {
+        // check if state has been updated to toggle modal
+        if (this.state.correctAmt !== -1) {
           this.toggleModal();
         }
       }
@@ -66,7 +73,6 @@ class Quiz extends Component {
 
     // send score to state & show modal
     this.handleSubmitUpdate(correctCount);
-    // this.toggleModal();
   };
 
   // quiz submission handler
@@ -79,7 +85,7 @@ class Quiz extends Component {
     return (
       <div className="bg-light-gray" id="quiz-page">
         <div id="quiz-section">
-          <section className="bg-image-alt" id="quiz-title-section">
+          <section className="bg-image bg-image-quiz" id="quiz-title-section">
             <div className="container section-container title-container">
               <h1
                 className="section-header text-center"

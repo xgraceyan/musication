@@ -11,7 +11,8 @@ html {
   scroll-behavior: smooth;
 }
 
-h1 {
+h1,
+h2 {
   font-family: "DM Serif Display", serif;
 }
 
@@ -53,24 +54,29 @@ iframe {
 }
 
 .bg-image {
-  background: linear-gradient(to right, #20252bbf, #20252bbf),
-    url("https://images.unsplash.com/photo-1613142659446-bf37da865799?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80") !important;
-  background-size: cover;
+  background-size: cover !important;
   background-repeat: no-repeat;
 }
 
-.bg-image-alt {
+.bg-image-about {
   background: linear-gradient(to right, #20252bbf, #20252bbf),
-    url("https://images.pexels.com/photos/210764/pexels-photo-210764.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") !important;
-  background-size: cover;
-  background-repeat: no-repeat;
+    url("https://images.unsplash.com/photo-1613142659446-bf37da865799?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
 }
 
-.bg-image-alt-2 {
+.bg-image-quiz {
   background: linear-gradient(to right, #20252bbf, #20252bbf),
-    url("https://images.pexels.com/photos/934067/pexels-photo-934067.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") !important;
-  background-size: cover;
-  background-repeat: no-repeat;
+    url("https://images.pexels.com/photos/210764/pexels-photo-210764.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+.bg-image-contact {
+  background: linear-gradient(to right, #20252bbf, #20252bbf),
+    url("https://images.pexels.com/photos/7285285/pexels-photo-7285285.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+      center;
+}
+
+.bg-image-home {
+  background: linear-gradient(to right, #20252bbf, #20252bbf),
+    url("https://images.pexels.com/photos/934067/pexels-photo-934067.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 }
 
 /* containers */
@@ -108,6 +114,12 @@ iframe {
 
 .section-header {
   font-size: 3rem;
+  margin: 2rem 0rem;
+  color: white;
+}
+
+.section-header-alt {
+  font-size: 2rem;
   margin: 2rem 0rem;
   color: white;
 }
@@ -180,6 +192,15 @@ iframe {
 
 .btn-submit:hover {
   background-color: rgba(198, 161, 15, 0.92) !important;
+  transition: ease-in-out 0.2s;
+}
+
+.btn-icon {
+  color: #f6c90d;
+}
+
+.btn-icon:hover {
+  color: #d9b00d;
   transition: ease-in-out 0.2s;
 }
 
@@ -296,7 +317,7 @@ iframe {
 .frozen {
   position: fixed;
   pointer-events: none;
-  height: 100vh;
+  height: 100vh !important;
   width: 100%;
   overflow: hidden !important;
   opacity: 0.1;
@@ -306,8 +327,24 @@ iframe {
   border-radius: 1rem !important;
 }
 
-/* quiz form */
+/* form */
+form input:focus,
+form textarea:focus,
+form select:focus {
+  border-color: #f6c90d !important;
+  box-shadow: 0 0 0 0.25rem #f6c70d36 !important;
+}
+
+textarea {
+  resize: none !important;
+}
+
 .title-container#quiz-form-container {
   padding-top: 0 !important;
+  padding-bottom: 5rem;
+}
+
+.title-container#contact-form-container {
+  padding-top: 3rem !important;
   padding-bottom: 5rem;
 }
