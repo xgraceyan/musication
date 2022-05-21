@@ -6,7 +6,6 @@ import reportWebVitals from "./reportWebVitals";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "font-awesome/css/font-awesome.min.css";
-import "rolly.js/css/style.css";
 
 import { createStore, applyMiddleware } from "redux";
 import RootReducer from "./store/reducers/RootReducer";
