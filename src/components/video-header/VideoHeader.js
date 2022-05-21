@@ -40,7 +40,7 @@ const VideoHeader = ({ videos }) => {
             data-aos-delay="1800"
           >
             Discover the various instruments that make music we hear all around
-            us in our everyday lives, with an emphasis on classical music.
+            us in our everyday lives.
           </p>
           <div className="spacer"></div>
           <p className="text-white" data-aos="fade-up" data-aos-delay="2000">

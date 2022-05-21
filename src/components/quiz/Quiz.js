@@ -5,12 +5,12 @@ import QuizModal from "./QuizModal";
 
 class Quiz extends Component {
   state = {
-    q1: "A",
-    q2: "A",
-    q3: "A",
-    q4: "A",
-    q5: "A",
-    q6: "A",
+    q1: "",
+    q2: "",
+    q3: "",
+    q4: "",
+    q5: "",
+    q6: "",
     correctAmt: -1,
   };
 
@@ -20,14 +20,6 @@ class Quiz extends Component {
   toggleModal = () => {
     // check if state has been updated
     if (this.state.correctAmt !== -1) {
-      // removes scroll element & replaces it with child section
-      $("#root-section").replaceWith(function() {
-        return $("#quiz-page", this);
-      });
-
-      // disable scrolling
-      $(".rolly-scroll-view").remove();
-
       // shows modal
       $("#quizModal")
         .addClass("show")
@@ -60,25 +52,28 @@ class Quiz extends Component {
     );
   };
 
-  processSubmission = () => {
+  // quiz submission handler
+  handleFormSubmit = (e) => {
+    e.preventDefault();
     var correctCount = 0;
 
     for (var i = 1; i <= Object.keys(this.state).length - 1; i++) {
       // count how many questions are correct
       const questionNum = "q" + i;
-      if (this.state[questionNum] === this.correctAnswers[i - 1]) {
+
+      if (this.state[questionNum] === "") {
+        // if questions are empty
+        $(".alert") // show alert
+          .removeClass("hidden")
+          .addClass("shown");
+        return;
+      } else if (this.state[questionNum] === this.correctAnswers[i - 1]) {
         correctCount++;
       }
     }
 
     // send score to state & show modal
     this.handleSubmitUpdate(correctCount);
-  };
-
-  // quiz submission handler
-  handleFormSubmit = (e) => {
-    e.preventDefault();
-    this.processSubmission();
   };
 
   render() {
@@ -122,6 +117,12 @@ class Quiz extends Component {
               data-aos-delay="100"
             >
               <h1 className="section-header text-center">Questions</h1>
+              <div
+                className="alert alert-danger alert-dismissible hidden"
+                role="alert"
+              >
+                Please answer all questions before submitting.
+              </div>
               <form id="quiz-form" className="text-white">
                 <div className="mb-3" id="q1-select">
                   <label for="q1" className="form-label">
@@ -132,6 +133,9 @@ class Quiz extends Component {
                     id="q1"
                     onChange={this.handleChange}
                   >
+                    <option selected disabled>
+                      Choose option
+                    </option>
                     <option value="A">A - Piccolo</option>
                     <option value="B">B - Oboe</option>
                     <option value="C">C - Bassoon</option>
@@ -147,6 +151,9 @@ class Quiz extends Component {
                     id="q2"
                     onChange={this.handleChange}
                   >
+                    <option selected disabled>
+                      Choose option
+                    </option>
                     <option value="A">A - French Horn</option>
                     <option value="B">B - Trombone</option>
                     <option value="C">C - Trumpet</option>
@@ -162,6 +169,9 @@ class Quiz extends Component {
                     id="q3"
                     onChange={this.handleChange}
                   >
+                    <option selected disabled>
+                      Choose option
+                    </option>
                     <option value="A">A - Brass</option>
                     <option value="B">B - Woodwind</option>
                     <option value="C">C - Strings</option>
@@ -178,6 +188,9 @@ class Quiz extends Component {
                     id="q4"
                     onChange={this.handleChange}
                   >
+                    <option selected disabled>
+                      Choose option
+                    </option>
                     <option value="A">A - Sliding mechanism</option>
                     <option value="B">B - Valves</option>
                     <option value="C">C - Keys</option>
@@ -193,6 +206,9 @@ class Quiz extends Component {
                     id="q5"
                     onChange={this.handleChange}
                   >
+                    <option selected disabled>
+                      Choose option
+                    </option>
                     <option value="A">A - Violin</option>
                     <option value="B">B - Viola</option>
                     <option value="C">C - Harp</option>
@@ -209,6 +225,9 @@ class Quiz extends Component {
                     id="q6"
                     onChange={this.handleChange}
                   >
+                    <option selected disabled>
+                      Choose option
+                    </option>
                     <option value="A">A - Timpani</option>
                     <option value="B">B - Piano</option>
                     <option value="C">C - Triangle</option>
