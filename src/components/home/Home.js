@@ -81,6 +81,22 @@ class Home extends Component {
                   }
                 />
               </div>
+              {/* !====== percussion ======== */}
+              <div
+                className="card-section"
+                id="strings-section"
+                data-aos="fade-up"
+              >
+                <h3 className="header-2">Percussion</h3>
+                <div className="small-spacer"></div>
+                <InstrumentCardCarousel
+                  instruments={
+                    jsonQuery("instruments[*type=percussion]", {
+                      data: this.props,
+                    }).value
+                  }
+                />
+              </div>
             </div>
           </section>
           <section

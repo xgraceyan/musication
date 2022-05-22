@@ -89,9 +89,7 @@ function Instrument(props) {
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            <h1 className="section-header text-center">
-              Pieces & Performances
-            </h1>
+            <h1 className="section-header text-center">Video Clips</h1>
             <InstrumentVideoCarousel videos={instrument.videos} />
           </div>
         </section>

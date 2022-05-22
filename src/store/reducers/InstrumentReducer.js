@@ -29,10 +29,10 @@ const initState = {
             "Performed by James Galway & the Mostly Mozart Festival Orchestra",
         },
         {
-          url: "https://www.youtube.com/embed/JQDTVDmbEpA",
-          piece: "Chaminade - Concertino for Flute",
+          url: "https://www.youtube.com/embed/D3gPY9XjHpM",
+          piece: "Lizzo & David Letterman play the flute",
           performer:
-            "Performed by Hayley Miller & the Boston Philharmonic Youth Orchestra",
+            "Lizzo is an American singer and rapper who can also play the flute.",
         },
       ],
       links: ["https://en.wikipedia.org/wiki/Flute"],
@@ -61,10 +61,9 @@ const initState = {
           performer: "Performed by Torin Olsen",
         },
         {
-          url: "https://www.youtube.com/embed/EpiOB1iRisc",
-          piece: "Vivaldi - Piccolo Concerto in C major (RV 443)",
-          performer:
-            "Performed by Sara Ureña Cabrera & the Armenian National Chamber Orchestra",
+          url: "https://www.youtube.com/embed/cueBYuIC9OU",
+          piece: "Harp solo from Nutcracker on Piccolo (scene)",
+          performer: "From the movie As Young As You Feel (1951)",
         },
       ],
       links: ["https://en.wikipedia.org/wiki/Piccolo"],
@@ -93,16 +92,14 @@ const initState = {
             "Performed by Arngunnur Árnadóttir & Iceland Symphony Orchestra",
         },
         {
-          url: "https://www.youtube.com/embed/9GnJBLwOjFo",
-          piece: "Copland - Concerto for Clarinet and String Orchestra",
-          performer:
-            "Performed by Martin Fröst & the Norwegian Chamber Orchestra",
+          url: "https://www.youtube.com/embed/nuEMqMc1Fh4",
+          piece: "Lean On by Major Lazer (clarinet cover)",
+          performer: "Performed by Four Play clarinet",
         },
         {
-          url: "https://www.youtube.com/embed/8VXXNs87XwI",
-          piece: "Weber - Clarinet Concerto No. 1",
-          performer:
-            "Performed by Andreas Ottensamer & the Berlin Philharmonic",
+          url: "https://www.youtube.com/embed/mjr8jZ83vic",
+          piece: "The Animals - House of the Rising Sun",
+          performer: "Performed by Doreen Ketchens",
         },
       ],
       links: ["https://en.wikipedia.org/wiki/Clarinet"],
@@ -127,16 +124,14 @@ const initState = {
           performer: "Performed by Emma Black & the Netherlands Bach Society",
         },
         {
-          url: "https://www.youtube.com/embed/QsJtWhBGfo8",
-          piece: "Haydn - Oboe Concerto in C major (Andante)",
-          performer:
-            "Performed by Francois Leleux & the Norwegian Chamber Orchestra",
+          url: "https://www.youtube.com/embed/pTsitO4TXF8",
+          piece: "Morricone - Gabriel's Oboe (scene)",
+          performer: "From the movie 'The Mission' (1986)",
         },
         {
-          url: "https://www.youtube.com/embed/2WJhax7Jmxs",
-          piece: "Morricone - Gabriel's Oboe",
-          performer:
-            "Performed by Henrik Chaim Goldschmidt & the Faroe Islands Philharmonic",
+          url: "https://www.youtube.com/embed/gXWZCtjgDms",
+          piece: "Tchaikovsky - Swan Lake (oboe solo)",
+          performer: "Performed by Andrew Parker",
         },
       ],
       links: ["https://en.wikipedia.org/wiki/Oboe"],
@@ -161,9 +156,10 @@ const initState = {
             "Performed by Klaudia Abramczuk & the The Karol Szymanowski School of Music Orchestra",
         },
         {
-          url: "https://www.youtube.com/embed/QfhxZMUy9DU",
-          piece: "Mozart - Bassoon Concert in B-flat major",
-          performer: "Performed by Theo Plath & the Frankfurt Radio Symphony",
+          url: "https://www.youtube.com/embed/XghEYA-edZA",
+          piece: "Camila Cabello - Havana (Bassoon Quartet)",
+          performer:
+            "Performed by The Breaking Winds arr. Brittany Harrington-Smith",
         },
         {
           url: "https://www.youtube.com/embed/cKBrnjxlKgU",
@@ -196,15 +192,14 @@ const initState = {
             "Performed by Joseph Lulloff & the Brevard Music Center Orchestra",
         },
         {
-          url: "https://www.youtube.com/embed/MYkIrYh7zuw",
-          piece: "Glass - Concerto for saxophone quartet and orchestra",
-          performer:
-            "Performed by Bohemia Saxophone Quartet & the Brno Philharmonic Orchestra",
+          url: "https://www.youtube.com/embed/BrmeOWbyOXw",
+          piece: "Charles Mingus - Moanin' (transcribed by George Collier)",
+          performer: "Performed by Leo P and the Metropole Orkest",
         },
         {
-          url: "https://www.youtube.com/embed/EcdycK4-Or4",
-          piece: "Green - Body and Soul",
-          performer: "Performed by Eric Marienthal & the Bobby Shew Quintet",
+          url: "https://www.youtube.com/embed/XBWyE1v8--I",
+          piece: "Tones and I - Dance Monkey (Saxophone cover)",
+          performer: "Performed by Daniele Vitale",
         },
       ],
       links: ["https://en.wikipedia.org/wiki/Saxophone"],
@@ -230,14 +225,21 @@ const initState = {
           performer: "Performed by Alison Balsom & the BBC Proms Orchestra",
         },
         {
-          url: "https://www.youtube.com/embed/Ia6c6uIIb_Q",
-          piece: "Arban - The Carnival of Venice",
-          performer: "Performed by John Armstrong & the US Navy Concert Band",
+          url: "https://www.youtube.com/embed/lcK8XbS5BuM",
+          piece:
+            "Star Spangled Banner trumpet solo (transcribed by George Collier)",
+          performer: "Performed by Arturo Sandoval",
         },
         {
-          url: "https://www.youtube.com/embed/GN09R2ryJ7o?start=144",
-          piece: "Amazing Grace - Trumpet Solo",
-          performer: "Performed by Wynton Marsalis",
+          url: "https://www.youtube.com/embed/IPXIgEAGe4U?start=98",
+          piece: "Panic! At The Disco - High Hopes",
+          performer: "There is a lot of trumpet in this song (ex. @ 1:38)",
+        },
+        {
+          url: "https://www.youtube.com/embed/nXQdlr05ec8",
+          piece: "Lil Nas X ft. Jack Harlow - Industry Baby",
+          performer:
+            "Cool trumpet solo in the beginning and throughout the song",
         },
       ],
       links: ["https://en.wikipedia.org/wiki/Trumpet"],
@@ -263,15 +265,14 @@ const initState = {
           performer: "Performed by Yun Zheng & the Mariinsky Theater Orchestra",
         },
         {
-          url: "https://www.youtube.com/embed/SS8ey4g6jYo",
-          piece: "Strauss - Concerto for French Horn No. 1",
-          performer:
-            "Performed by Radek Baborak & the National Philharmonic of Russia",
+          url: "https://www.youtube.com/embed/_BK-akcT0mQ",
+          piece: "French Horn Disney Medley",
+          performer: "Performed by Marc Papeghin",
         },
         {
-          url: "https://www.youtube.com/embed/AUES5PA0ALg",
-          piece: "Tchaikovsky - 5th Symphony (Horn Solo)",
-          performer: "Performed by Eric Terwilliger & the Munich Philharmonic",
+          url: "https://www.youtube.com/embed/EAJT9Bk_GeQ",
+          piece: "Jurassic Park for Horns",
+          performer: "Performed by the Vienna Horns",
         },
       ],
       links: ["https://en.wikipedia.org/wiki/French_horn"],
@@ -298,16 +299,15 @@ const initState = {
             "Performed by Michael Buchana & the Bavarian Radio Symphony Orchestra",
         },
         {
-          url: "https://www.youtube.com/embed/TNOi65x4SYU",
-          piece: "Grøndahl - Trombone Concerto",
+          url: "https://www.youtube.com/embed/HwWQUXnD0oo",
+          piece: "John Williams - Imperial March (Star Wars)",
           performer:
-            "Performed by Jonathan Reith & the Toulouse Wind Orchestra",
+            "Performed by Manuel Nageli (trombone) and the Uniorchester Bern",
         },
         {
-          url: "https://www.youtube.com/embed/0K0cEQJUFHc",
-          piece: "Chopin - Nocturne Op. 9 No. 2",
-          performer:
-            "Performed by Nicolas Moutier (trombone) & Ena Uotani (piano)",
+          url: "https://www.youtube.com/embed/lTLA4kKXzE8",
+          piece: "Sweet Louisiana (Trombone solo)",
+          performer: "Performed by Wycliffe Gordon",
         },
       ],
       links: ["https://en.wikipedia.org/wiki/Trombone"],
@@ -333,15 +333,14 @@ const initState = {
           performer: "Performed by JáTtik Clark & the Corvallis-OSU Symphony",
         },
         {
-          url: "https://www.youtube.com/embed/oTrZb9aIOf8",
-          piece: "Gregson - Tuba Concerto (movement 1)",
-          performer: "Performed by Derek Fenstermacher & the CCM Wind Symphony",
+          url: "https://www.youtube.com/embed/2Eq9m0zizkQ",
+          piece: "'Tuba Christmas'",
+          performer: "Video by CBS Sunday Morning & Bill Geist",
         },
         {
-          url: "https://www.youtube.com/embed/75jd5Mn--E8",
-          piece: "Salgueiro - Concerto for Tuba op. 139",
-          performer:
-            "Performed by Miguel Canada & the Madeira Classical Orchestra",
+          url: "https://www.youtube.com/embed/NCyIEKT3NgI",
+          piece: "'hilarious tuba solo'",
+          performer: "Video by channel 'TheJimmywwebb'",
         },
       ],
       links: ["https://en.wikipedia.org/wiki/Tuba"],
@@ -368,16 +367,15 @@ const initState = {
             "Performed by Hilary Hahn & the Radio France Philharmonic Orchestra",
         },
         {
-          url: "https://www.youtube.com/embed/I03Hs6dwj7E",
-          piece: "Mendelssohn - Violin Concerto in E minor Op. 64",
-          performer:
-            "Performed by Ray Chen & the Gothenburg Symphony Orchestra",
+          url: "https://www.youtube.com/embed/fh59nvRA52M",
+          piece: "'violinist string BREAKS during Tchaikovsky'",
+          performer: "Performed by Ray Chen & the Seattle Symphony",
         },
         {
-          url: "https://www.youtube.com/embed/cbJZeNlrYKg",
-          piece: "Tchaikovsky - Violin Concerto in D major, Op. 35",
+          url: "https://www.youtube.com/embed/jUjDcqdvCrk",
+          piece: "Clean Bandit ft. Jess Glynne - Rather Be",
           performer:
-            "Performed by Joshua Bell & the National Youth Orchestra of the USA",
+            "There's a cool violin melody (especially apparent at the beginning of the song)",
         },
       ],
       links: ["https://en.wikipedia.org/wiki/Violin"],
@@ -404,16 +402,15 @@ const initState = {
             "Performed by Cristina Cordero & the Andrés Segovia Chamber Orchestra",
         },
         {
-          url: "https://www.youtube.com/embed/UzEFRNWEqQ4",
-          piece: "Casadesus - Concerto in C minor for Viola and Orchestra",
-          performer:
-            "Performed by Sang-Jin Kim & the Deutsches Kammerorchester Berlin",
+          url: "https://www.youtube.com/embed/21BQF4oyLPg",
+          piece: "Ed Sheeran - Perfect (Viola cover)",
+          performer: "Performed by Jeremy Green",
         },
         {
-          url: "https://www.youtube.com/embed/yMpzPMkrALM",
-          piece: "Telemann - Viola Concerto in G major",
+          url: "https://www.youtube.com/embed/aCFnzSCzoYA",
+          piece: "Queen - Bohemian Rhapsody (for orchestra & viola)",
           performer:
-            "Performed by Rose Armbrust Griffin & the Midwest Young Artists Early Music Academy",
+            "Performed by Sarah Harball (viola) & the Indiana University Studio Orchestra",
         },
       ],
       links: ["https://en.wikipedia.org/wiki/Viola"],
@@ -440,17 +437,51 @@ const initState = {
             "Performed by Sheku Kanneh-Mason & the City of Birmingham Symphony Orchestra",
         },
         {
-          url: "https://www.youtube.com/embed/NayPFVXYo9o",
-          piece: "Schumann - Cello Concerto Op. 129",
-          performer: "Performed by Kian Soltani & the SWR Symphony Orchestra",
+          url: "https://www.youtube.com/embed/DcFpvolRN3w",
+          piece: "Game of Thrones Medley",
+          performer: "Performed by 2CELLOS and the London Symphony Orchestra",
         },
         {
-          url: "https://www.youtube.com/embed/mGQLXRTl3Z0",
-          piece: "Bach - Cello Suite No. 1 in G",
-          performer: "Performed by Mischa Maisky",
+          url: "https://www.youtube.com/embed/XPv4ohPTC4M",
+          piece: "'Yo-Yo Ma Answers Cello Questions From Twitter'",
+          performer: "Video by WIRED",
         },
       ],
       links: ["https://en.wikipedia.org/wiki/Cello"],
+    },
+    {
+      id: "guitar",
+      name: "Guitar",
+      longName: "String instrument",
+      type: "string",
+      coverImage:
+        "https://images.pexels.com/photos/3428498/pexels-photo-3428498.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      description:
+        "The guitar usually has six strings and can be played by plucking or strumming strings while pressing down on strings at the top of the guitar to change notes.\n\nGuitars used to be made out of wood and natural fibers, but strings began to be made out of steel in the late 1800s, and the modern nylon strings were introduced in the 1940s.\n\nThe guitar has many types, including the classical guitar and the electric guitar.\n\nGuitars are used in a large spectrum of music genres, including folk, jazz, and pop, but is not commonly found in classical music.",
+      images: [
+        "https://images.pexels.com/photos/1407322/pexels-photo-1407322.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "https://images.pexels.com/photos/2079169/pexels-photo-2079169.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "https://images.pexels.com/photos/258283/pexels-photo-258283.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      ],
+      videos: [
+        {
+          url: "https://www.youtube.com/embed/6gQ7m0c4ReI",
+          piece: "Marcin - Moonlight Sonata on Guitar",
+          performer: "Performed by Marcin",
+        },
+        {
+          url: "https://www.youtube.com/embed/u3ePPA0yzSU",
+          piece: "Anne-Marie - 2002 (acoustic)",
+          performer: "Performed by Ed Sheeran & Anne-Marie",
+        },
+        {
+          url: "https://www.youtube.com/embed/TFrMDGfW_Sg?start=140",
+          piece: "Ariana Grande - Dangerous Woman",
+          performer:
+            "This song has a really cool electric guitar solo after the bridge",
+        },
+      ],
+      links: ["https://en.wikipedia.org/wiki/Guitar"],
     },
     {
       id: "harp",
@@ -474,18 +505,116 @@ const initState = {
             "Performed by Elizaveta Bushueva & the Moscow City Symphony",
         },
         {
-          url: "https://www.youtube.com/embed/vEKdxLrbSiU",
-          piece: "Handel - Harp Concerto (first movement)",
-          performer:
-            "Performed by Julie Sgarro & the Qatar Philharmonic Orchestra",
+          url: "https://www.youtube.com/embed/9Xd8xq06FCw",
+          piece: "Simon & Garfunkel - The Sound of Silence (harp cover)",
+          performer: "Performed by 'Naomi SV'",
         },
         {
-          url: "https://www.youtube.com/embed/oPmKRtWta4E",
-          piece: "Bach - Toccata and Fugue in D Minor",
-          performer: "Performed by Amy Turk",
+          url: "https://www.youtube.com/embed/hoda-sLt6fY",
+          piece: "Daft Punk - Get Lucky (w/ harp)",
+          performer: "Performed by Anna McLuckie on 'The Voice UK'",
         },
       ],
       links: ["https://en.wikipedia.org/wiki/Harp"],
+    },
+    {
+      id: "snare",
+      name: "Snare Drum",
+      longName: "Percussion instrument",
+      type: "percussion",
+      coverImage:
+        "https://images.pexels.com/photos/5809457/pexels-photo-5809457.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      description:
+        "The snare drum makes a sharp sound when hit with a drum stick and is composed of many stiff wires inside the drum. Players can adjust the pitch and tone by changing the tension rod at the top of the snare.\n\nSnare drums first originated from the tabourine family and was made with a rattle.\n\nSnare drums provide an essential beat for pop, jazz, orchestra, etc and can be used in all music genres in general.",
+      images: [
+        "https://images.pexels.com/photos/6059430/pexels-photo-6059430.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "https://images.pexels.com/photos/8044195/pexels-photo-8044195.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170",
+      ],
+      videos: [
+        {
+          url: "https://www.youtube.com/embed/fZOUAtE7QRw",
+          piece: "Delecluse - Etude 1 for snare drum",
+          performer: "Performed by Rob Knopper",
+        },
+        {
+          url: "https://www.youtube.com/embed/lsgSGHyXRiE",
+          piece: "20th Century Fox Intro Theme",
+          performer:
+            "The snare drum provides the beat for this iconic intro song",
+        },
+        {
+          url: "https://www.youtube.com/embed/qEyLsagppNU",
+          piece: "Michael Jackson - Rock With You",
+          performer:
+            "The snare is done really well in this song, especially the intro",
+        },
+      ],
+      links: ["https://en.wikipedia.org/wiki/Snare-drum"],
+    },
+    {
+      id: "timpani",
+      name: "Timpani",
+      longName: "Percussion instrument",
+      type: "percussion",
+      coverImage: "https://i.ytimg.com/vi/LCFQdKH8gOE/maxresdefault.jpg",
+      description:
+        "The timpani is commonly referred to as a kettle drum and is made up of the drum head on top of a large bowl. The timpani uses a special drum stick called a timpani mallet to produce sound.\n\nThe timpani was first introduce in the late 1800s and had evolved from military drums, originally having a wooden frame.\n\nThe timpani has a loud, vibrating sound and is used in many different ensembles, like concert, marching, and rock bands, as well as having been a part of orchestras for a long time.",
+      images: [
+        "https://i.ytimg.com/vi/LCFQdKH8gOE/maxresdefault.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/6/6e/Munich_-_Timpani_player_in_an_orchestra_rehearsal_-_5655.jpg",
+      ],
+      videos: [
+        {
+          url: "https://www.youtube.com/embed/4ePVC0Tk5JQ",
+          piece: "Strauss - Also Sprach Zarathustra",
+          performer: "Performed by the Bilkent Symphony Orchestra",
+        },
+        {
+          url: "https://www.youtube.com/embed/EKflMwg0gTA",
+          piece: "John Williams - Star Wars Main Theme (timpani)",
+          performer: "Performed by Gabriel Rodriguez (timpani)",
+        },
+        {
+          url: "https://www.youtube.com/embed/vUuLf1zlcJo",
+          piece: "Timpani Drummer's Finale",
+          performer: "Unknown performer (but watch until the end!)",
+        },
+      ],
+      links: ["https://en.wikipedia.org/wiki/Timpani"],
+    },
+    {
+      id: "piano",
+      name: "Piano",
+      longName: "Percussion/stringed instrument",
+      type: "percussion",
+      coverImage:
+        "https://images.pexels.com/photos/2378209/pexels-photo-2378209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      description:
+        "The piano is classified as both a percussive and stringed instrument. It is played by pressing down rows of keys that causes a hammer inside the piano to hit certain strings.\n\nThe piano was invented by Bartolomeo Cristofori in 1700, in Italy, but early versions had thin strings that led to a much quieter sound than the piano we have today.During the 1800s, lots of music arranged for piano was released so people could play it in their homes, as most had a simplified version of a piano, which led to it being one of the most familiar instruments in the world.\n\nThe piano is used widely in classical, jazz, pop, and solo music. It also typically accompanies other instruments, like the flute or clarinet.",
+      images: [
+        "https://images.pexels.com/photos/1021142/pexels-photo-1021142.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "https://images.pexels.com/photos/2043571/pexels-photo-2043571.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "https://images.unsplash.com/photo-1552422535-c45813c61732?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170",
+      ],
+      videos: [
+        {
+          url: "https://www.youtube.com/embed/bT6WmWVYPhI",
+          piece: "Beethoven - Moonlight Sonata",
+          performer: "Performed by Alicia Keys",
+        },
+        {
+          url: "https://www.youtube.com/embed/n6GEcdh5whk",
+          piece: "Henri Herbert - Gettin On Down",
+          performer: "Performed by Henri Herbert",
+        },
+        {
+          url: "https://www.youtube.com/embed/Cwkej79U3ek",
+          piece: "Vanessa Carlton - A Thousand Miles",
+          performer: "This song has a very prominent piano melody throughout",
+        },
+      ],
+      links: ["https://en.wikipedia.org/wiki/Piano"],
     },
   ],
 };

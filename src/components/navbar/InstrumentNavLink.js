@@ -16,6 +16,10 @@ const InstrumentNavLink = ({ props }) => {
     data: props,
   }).value;
 
+  const perucussionList = jsonQuery("instruments[*type=percussion]", {
+    data: props,
+  }).value;
+
   return (
     <li className="nav-item dropdown">
       <a
@@ -116,6 +120,36 @@ const InstrumentNavLink = ({ props }) => {
                       href={"../instrument/" + stringInstrument.id}
                     >
                       {stringInstrument.name}
+                    </a>
+                  </li>
+                );
+              })}
+          </ul>
+        </li>
+
+        {/* percussion */}
+        <li className="sub-dropdown dropend">
+          <a
+            className="dropdown-item dropdown-toggle"
+            data-bs-toggle="dropdown"
+            role="button"
+            href="/#"
+          >
+            Percussion
+          </a>
+          <ul
+            className="dropdown-menu dropdown-menu-sub"
+            aria-labelledby="dropdownMenuButtonBrass"
+          >
+            {perucussionList &&
+              perucussionList.map((percussionInstrument) => {
+                return (
+                  <li key={percussionInstrument.id}>
+                    <a
+                      className="dropdown-item"
+                      href={"../instrument/" + percussionInstrument.id}
+                    >
+                      {percussionInstrument.name}
                     </a>
                   </li>
                 );
