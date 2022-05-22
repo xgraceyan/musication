@@ -20,13 +20,14 @@ function About() {
             Music is an integral part in many peoples' lives. Most of us hear it
             everyday, from popular songs on the radio to even your phone
             ringtone, but we sometimes forget how that music is created.
-            Musication aims to expose people to the various types of instruments
-            with an emphasis on classical music, providing a little bit of
-            history and information on common instruments while showing how the
-            instrument looks and sounds like and the pieces it can play. <br />
+            Musication aims to expose people to the various types of
+            instruments, providing a little bit of history and information on
+            common instruments while showing how the instrument looks and sounds
+            like and the pieces it can play. <br />
             <br />
             Hopefully with this newfound knowledge you will be able to detect
-            certain instruments a song or piece you're listening to uses!
+            certain instruments a song or piece you're listening to uses and
+            have a greater appreciation of music in general!
           </p>
           <br />
           <hr className="yellow-line" />
