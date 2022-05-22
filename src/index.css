@@ -149,9 +149,21 @@ iframe {
   color: white;
 }
 
+@media only screen and (max-width: 1200px) {
+  .row-section-header {
+    font-size: 6rem;
+  }
+}
+
 @media only screen and (max-width: 800px) {
   .row-section-header {
     font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .row-section-header {
+    font-size: 2rem;
   }
 }
 
