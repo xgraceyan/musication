@@ -1,6 +1,8 @@
 # Musication
 [View deployed website](https://graceyan-musication.netlify.app/)
 
+[View demo video](https://youtu.be/KaKVOMw6USY)
+
 ![musication home page](https://media.discordapp.net/attachments/607725400314871836/978110914165362728/unknown.png?width=891&height=468)
 
 ## About
