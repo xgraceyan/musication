@@ -3,6 +3,8 @@
 
 [View demo video](https://youtu.be/KaKVOMw6USY)
 
+NOTE: Because of Chrome's autoplay policy, the user must click anywhere on the website in order to activate sounds.
+
 ![musication home page](https://media.discordapp.net/attachments/607725400314871836/978110914165362728/unknown.png?width=891&height=468)
 
 ## About
