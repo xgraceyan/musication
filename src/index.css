@@ -322,6 +322,10 @@ iframe {
 }
 
 /* modal */
+.modal {
+  z-index: 1 !important;
+}
+
 .modal-backdrop {
   z-index: -1 !important;
 }
@@ -329,7 +333,6 @@ iframe {
 .frozen {
   position: fixed;
   pointer-events: none;
-  height: 100vh !important;
   width: 100%;
   overflow: hidden !important;
   opacity: 0.1;
