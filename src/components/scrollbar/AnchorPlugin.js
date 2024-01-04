@@ -1,5 +1,6 @@
 import { ScrollbarPlugin } from "smooth-scrollbar";
 
+// AnchorPlugin & ScrollbarPlugin made by idiotWu on GitHub
 class AnchorPlugin extends ScrollbarPlugin {
   static pluginName = "anchor";
 
