@@ -5,7 +5,9 @@
 
 NOTE: Because of Chrome's autoplay policy, the user must click anywhere on the website in order to activate sounds.
 
-![musication home page](https://media.discordapp.net/attachments/607725400314871836/978110914165362728/unknown.png?width=891&height=468)
+![musication home page](https://i.imgur.com/uBDo1r2.png)
+
+![musication page](https://i.imgur.com/U5ST5k1.png)
 
 ## About
 Music is an integral part of many peoples' lives. Most of us hear it every day, from popular songs on the radio to even a phone ringtone, but we sometimes forget how that music is created. Musication aims to expose people to the various types of instruments, providing a little bit of history and information on common instruments while showing how the instrument looks and sounds like and the pieces it can play.
